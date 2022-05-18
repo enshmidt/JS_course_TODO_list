@@ -1,0 +1,22 @@
+image: node:14.4.0
+
+stages:
+  - test
+
+Test:
+  stage: test
+  before_script:
+    - npm i
+  script:
+    - npm run test
+  only:
+    - merge_requests
+
+E2E:
+  stage: test
+  services:
+    - selenium/standalone-chrome
+  before_script:
+    - npm i
+  script:
+    - npm run e2e --host=selenium__standalone-chrome

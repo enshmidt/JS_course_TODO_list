@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Module 10 exercise</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-container">
+      <h1 class="header-text">ToDo List</h1>
+      <div class="search-container">
+        <input class="search-input" placeholder="Search..." type="text">
+        <button class="search-btn">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main class="list-container">
+    <div class="new-task">
+      <input class="new-task-input" type="text" placeholder="New Task..." />
+      <button class="add-btn">ADD</button>
+    </div>
+    <div class="open-tasks-container tasks-container">
+      <div class="open-header">
+        <div class="title">Open</div>
+        <div class="sort-open-block">
+          <select id="sort-open">
+            <option value="rec-a">Records (Asc)</option>
+            <option value="rec-d">Records (Desc)</option>
+            <option value="cr-a">Date creation (Asc)</option>
+            <option value="cr-d">Date creation (Desc)</option>
+          </select>
+        </div>
+      </div>
+      <p class="no-item">No item to display</p>
+      <div class="open-list task-list">
+      </div>
+      <button class="clear-list">Clear "Open" list</button>
+    </div>
+    <div class="done-tasks-container tasks-container">
+      <div class="done-header">
+        <span>Done</span>
+        <div class="sort-done-block">
+          <select id="sort-done">
+            <option value="rec-a">Records (Asc)</option>
+            <option value="rec-d">Records (Desc)</option>
+            <option value="due-a">Due date (Asc)</option>
+            <option value="due-d">Due date (Desc)</option>
+          </select>
+        </div>
+      </div>
+      <p class="no-item">No item to display</label>
+      <div class="done-list task-list">
+      </div>
+      <button class="clear-list">Clear "Done" list</button>
+    </div>
+  </main>
+  </script>
+</body>
+
+</html>
